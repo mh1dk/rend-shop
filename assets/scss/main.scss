@@ -352,3 +352,44 @@ a {
   // display: none;
 }
 
+
+
+
+// coming soon 
+
+.coming-card{
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  
+}
+.coming-card:hover .overlay {
+  height: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.275);
+  
+}
+
+
+// trusted companies 
+.trust{
+  transition: 1s;
+  cursor: pointer;
+  &:hover{
+    box-shadow: 3px 3px 15px $main-bg;
+  }
+}

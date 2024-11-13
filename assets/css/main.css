@@ -281,4 +281,39 @@ a {
   background-color: red;
 }
 
+.coming-card {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.coming-card:hover .overlay {
+  height: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.275);
+}
+
+.trust {
+  transition: 1s;
+  cursor: pointer;
+}
+.trust:hover {
+  box-shadow: 3px 3px 15px #9dde77;
+}
+
 /*# sourceMappingURL=main.css.map */
