@@ -1,14 +1,14 @@
 const product = [
-    {id:1 , productTitle: "nike Airforce" , description:"test" , img: './assets/images/cards/one.png'},
-    {id:2 , productTitle: "adidas felan" , description:"hi", img: './assets/images/cards/two.png'},
-    {id:3 , productTitle: "newbalance" , description:"bye", img: './assets/images/cards/three.png'},
-    {id:4 , productTitle: "reebok" , description:"boz", img: './assets/images/cards/four.png'},
-    {id:5 , productTitle: "under armor" , description:"saf", img: './assets/images/cards/five.png'},
-    {id:5 , productTitle: "under armor" , description:"saf", img: './assets/images/cards/six.png'},
-    {id:5 , productTitle: "under armor" , description:"saf", img: './assets/images/cards/seven.png'},
-    {id:5 , productTitle: "under armor" , description:"saf", img: './assets/images/cards/eight.png'},
-    {id:5 , productTitle: "under armor" , description:"saf", img: './assets/images/cards/nine.png'},
-    {id:5 , productTitle: "under armor" , description:"saf", img: './assets/images/cards/ten.png'},
+    {id:1 , productTitle: "nike Airforce" , description:"test" , img: '../assets/images/cards/one.png'},
+    {id:2 , productTitle: "adidas felan" , description:"hi", img: '../assets/images/cards/two.png'},
+    {id:3 , productTitle: "newbalance" , description:"bye", img: '../assets/images/cards/three.png'},
+    {id:4 , productTitle: "reebok" , description:"boz", img: '../assets/images/cards/four.png'},
+    {id:5 , productTitle: "under armor" , description:"saf", img: '../assets/images/cards/five.png'},
+    {id:5 , productTitle: "under armor" , description:"saf", img: '../assets/images/cards/six.png'},
+    {id:5 , productTitle: "under armor" , description:"saf", img: '../assets/images/cards/seven.png'},
+    {id:5 , productTitle: "under armor" , description:"saf", img: '../assets/images/cards/eight.png'},
+    {id:5 , productTitle: "under armor" , description:"saf", img: '../assets/images/cards/nine.png'},
+    {id:5 , productTitle: "under armor" , description:"saf", img: '../assets/images/cards/ten.png'},
 
 ]
 

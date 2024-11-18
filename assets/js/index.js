@@ -1,3 +1,37 @@
+
+const showUserName = () => {
+    const userName = JSON.parse(localStorage.getItem('user-name'));
+    const userBtn = document.getElementById('user');
+    const showName = document.getElementById('showName');
+    const textId = document.getElementById('textId')
+    if (userName) {
+  
+        textId.innerText = `you wannna log out?`;
+        showName.innerText = `hi ${userName}`;
+        userBtn.innerText = `log out`;
+        
+        userBtn.addEventListener('click', (e) => {
+            e.preventDefault;
+
+            localStorage.removeItem('user-name');
+            navigation.reload();
+        })
+    }
+}
+
+
+
+
+(async function render() {
+
+    showUserName();
+
+})()
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const carousel = document.querySelector(".carousel");
     const arrowBtns = document.querySelectorAll(".wrapper i");
@@ -72,17 +106,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-const next = document.getElementById('next');
 
-next.addEventListener('click' , ()=>{
-    const box1 = document.getElementById('box1');
-    const box2 = document.getElementById('box2');
-    box1.classList.toggle('d-none')
+// for login 
 
 
 
-
-   
-
-})
 
