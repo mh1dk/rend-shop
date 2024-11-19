@@ -11,10 +11,36 @@
         e.preventDefault();
         const username = document.getElementById('username');
         const pass = document.getElementById('pass');
-        const alertLogin = document.getElementById('alert-login');
+
+
+        
         const user = USER_LIST.filter( item => item.userName.toLowerCase() === username.value.toLowerCase().trim());
         if(user.length && pass.value === user[0].pass){
             console.log('login success');
+
+            const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+            const appendAlert = (message, type) => {
+              const wrapper = document.createElement('div')
+              wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+              ].join('')
+            
+              alertPlaceholder.append(wrapper)
+            }
+            
+            const alertTrigger = document.getElementById('liveAlertBtn')
+            if (alertTrigger) {
+              alertTrigger.addEventListener('click', () => {
+              
+                    
+                    appendAlert('Nice, you login successfully', 'success')
+              })
+            }
+
+
             localStorage.setItem('user-name', JSON.stringify(user[0].userName));
             setTimeout(() => {
 
@@ -31,29 +57,8 @@
     submitBtn.addEventListener('click',handleSubmit)
 
 
+    // bootstrap alert 
 
 
-    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-    const appendAlert = (message, type) => {
-      const wrapper = document.createElement('div')
-      wrapper.innerHTML = [
-        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-        `   <div>${message}</div>`,
-        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-        '</div>'
-      ].join('')
-    
-      alertPlaceholder.append(wrapper)
-    }
-    
-    const alertTrigger = document.getElementById('liveAlertBtn')
-    if (alertTrigger) {
-      alertTrigger.addEventListener('click', () => {
-        setTimeout(() => {
-            
-            appendAlert('Nice, you login successfully', 'success')
-        }, 2000);
-      })
-    }
     
 })();
