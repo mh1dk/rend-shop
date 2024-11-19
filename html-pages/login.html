@@ -15,6 +15,11 @@
 </head>
 <body>
     
+
+
+
+
+
     <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
         <div class="row d-flex flex-row-reverse w-50 h-75">
             <div style="background-color: #81bfd3;" class="col-lg-6 d-flex align-items-center p-0 login-card">
@@ -44,8 +49,9 @@
                       <div id="emailHelp" class="form-text">Please dont forget your username & password</div>
 
                     </div>
-                  
-                    <button style="background-color: #81bfd3;" type="submit" class="btn mt-5" id="submit">Submit</button>
+                    
+                    <button style="background-color: #81bfd3;" type="button" class="btn mt-5" id="submit" id="liveAlertBtn">Submit</button>
+                    <div id="liveAlertPlaceholder"></div>
                   </form>
 
 
@@ -55,11 +61,12 @@
         </div>
     </div>
 
-    <div class="alert-login">
 
-        <!-- <div class="alert alert-success" role="alert">
-            A simple success alert—check it out!
-          </div> -->
-    </div>
+
+
+    <div id="liveAlertPlaceholder"></div>
+
+
+    <!-- <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button> -->
 </body>
 </html>

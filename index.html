@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/js/index.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -62,11 +62,12 @@
                             <div class="d-flex text-center justify-content-center align-items-center">
 
 
-<!-- hereeeeeeeeeeeeeeeeeeeeeeeeeeee -->
+                                <!-- hereeeeeeeeeeeeeeeeeeeeeeeeeeee -->
 
 
 
-                                <button class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" id="showName">
+                                <button class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    id="showName">
                                     login
                                 </button>
                             </div>
@@ -760,7 +761,8 @@
         </div>
 
 
-        <div style="background-color: #81BFD3 ;color: black;" class="rounded-1">
+        <div style="  background-image: linear-gradient(#81BFD3,white);
+ ;color: black;" class="rounded-0">
 
             <div style="width: 100.8%;" class="row ">
                 <div class="col-lg-12">
@@ -815,20 +817,20 @@
                         </div>
                         <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center mt-2">
                             <div class="d-flex flex-column m-3">
-                            <h3 class="d-flex justify-content-start">
-                                mh1dk
-                            </h3>
-                            <p class="d-flex justify-content-center mt-2">
-                                Follow us for exclusive updates, inspiration, and connection. Join the journey!
-                            </p>
-                            <div class="mt-4">
-                                <i class="fa fa-instagram p-1"></i>
-                                <i class="fa fa-facebook-f p-1"></i>
-                                <i class="fa fa-twitter p-1"></i>
-                                <i class="fa fa-linkedin p-1"></i>
+                                <h3 class="d-flex justify-content-start">
+                                    mh1dk
+                                </h3>
+                                <p class="d-flex justify-content-center mt-2">
+                                    Follow us for exclusive updates, inspiration, and connection. Join the journey!
+                                </p>
+                                <div class="mt-4">
+                                    <i style="cursor: pointer;" class="fa fa-instagram p-1"></i>
+                                    <i style="cursor: pointer;" class="fa fa-facebook-f p-1"></i>
+                                    <i style="cursor: pointer;" class="fa fa-twitter p-1"></i>
+                                    <i style="cursor: pointer;" class="fa fa-linkedin p-1"></i>
 
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -860,24 +862,25 @@
 
 
 
-      <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Login form</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login form</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="textId">
+                    want to login again?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button style="background-color: #81BFD3;" type="button" id="user" class="btn"
+                        onclick="document.location='html-pages/login.html'">login again</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body" id="textId">
-            want to login again?
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button style="background-color: #81BFD3;" type="button" id="user" class="btn" onclick="document.location='html-pages/login.html'">login again</button>
-        </div>
-      </div>
     </div>
-  </div>
 
 
 
