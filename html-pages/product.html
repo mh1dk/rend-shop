@@ -197,16 +197,16 @@
     <div class="container fluid">
 
 
-
+<!-- search  -->
 
         <div class="row mt-5">
-            <div class="col-lg-3">
+            <div class="col-lg-3 mb-2">
 
                 <input style="font-size: 22px;" class="p-3 w-100 rounded-1 border h-100" type="search"
                     placeholder="search">
 
             </div>
-            <div class="col-lg-9 rounded-1 bg-body-secondary">
+            <div class="col-lg-9 rounded-1 bg-body-secondary mb-2">
 
 
 
@@ -246,15 +246,24 @@
 
 
         </div>
+
+
         <!-- card left -->
         <div class="row d-flex">
-            <div style="right: 65em; position: sticky;top: 0;" class="col-lg-3 ">
+            <div style="right: 65em; height: 100%; position: sticky;top: 45px;" class="col-lg-3 ">
                 <div class="left-side">
 
 
                     <h3 class="pt-2">
                         Filter
                     </h3>
+                    <div class="selected-filters mt-4">
+                        <h5>Selected Filters:</h5>
+                        <div style="color: #81BFD3;" id="selected-filters-list" class="d-flex flex-wrap gap-2">
+                            <!-- Selected filters will appear here -->
+                        </div>
+                    </div>
+                    
                     <div class="mt-4">
                         <p style="cursor: pointer;font-size: larger;" id="all">
                             All products
@@ -265,27 +274,26 @@
                         <p style="cursor: pointer;font-size: larger;" id="jordan">
                             Jordan shoes
                         </p>
-                        <p style="cursor: pointer;font-size: larger;" id="others">
-                            other shoes
-                        </p>
                         <p style="cursor: pointer;font-size: larger;" id="running">
                             running shoes
+                        </p>
+                        <p style="cursor: pointer;font-size: larger;" id="others">
+                            other shoes
                         </p>
                     </div>
 
 
 
-                    <div style="margin-left: -1.3em;" class="accordion" id="accordionExample">
-                        <div style="border: none;" class="accordion-item">
-                            <h2 class="accordion-header">
+                    <div style="margin-left: -1.3em;" class="accordion bg-white" id="accordionExample">
+                        <div style="border: none;" class="accordion-item bg-white">
+                            <h2 class="accordion-header bg-white">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Colours
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse "
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                            <div id="collapseOne" class="accordion-collapse collapse "data-bs-parent="#accordionExample">
+                                <div class="accordion-body ">
 
                                     <div class="row d-flex justify-content-center align-items-center">
                                         <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="black">Black
@@ -443,6 +451,111 @@
                                     <span></span>
                                 </div>
                             </div>
+
+
+
+
+        <!-- footer -->
+
+
+    <footer class="mt-2">
+
+
+
+
+
+
+        <div class="animate-wave ">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+
+
+        <div style="  background-image: linear-gradient(#81BFD3,white);
+ ;color: black;" class="rounded-0">
+
+            <div style="width: 100.8%;" class="row ">
+                <div class="col-lg-12">
+                    <div class="row d-flex flex-row-reverse">
+                        <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center mt-2">
+                            <p style="cursor: pointer;"
+                                class="d-flex align-items-center justify-content-center mt-2 w-100">
+                                Feedback
+                            </p>
+                            <p style="cursor: pointer;"
+                                class="d-flex justify-content-center align-items-center mt-2 w-100">
+                                Privace Policy
+                            </p>
+                            <p style="cursor: pointer;"
+                                class="d-flex justify-content-center align-items-center mt-2 w-100">
+                                Legal Notice
+                            </p>
+                            <p style="cursor: pointer;"
+                                class="d-flex justify-content-center align-items-center mt-2 w-100">
+                                Contact Us
+                            </p>
+                        </div>
+
+
+                        <div class="col-lg-3 d-flex flex-column mt-2">
+                            <p style="cursor: pointer;" class="d-flex  justify-content-center mt-2 w-100">
+                                Terms of use
+                            </p>
+                            <p style="cursor: pointer;" class="d-flex justify-content-center  mt-2 w-100">
+                                Contact Us
+                            </p>
+                            <p style="cursor: pointer;" class="d-flex justify-content-center  mt-2 w-100">
+                                Privace Policy
+                            </p>
+
+                        </div>
+                        <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center mt-2">
+                            <p style="cursor: pointer;"
+                                class="d-flex justify-content-center align-items-center mt-2 w-100">
+                                <a href="html-pages/product.html">Products</a>
+                            </p>
+                            <p style="cursor: pointer;" class="d-flex  justify-content-center mt-2 w-100">
+                                <a href="html-pages/about.html">About Us</a>
+                            </p>
+                            <p style="cursor: pointer;" class="d-flex justify-content-center  mt-2 w-100">
+                                Contact Us
+                            </p>
+                            <p style="cursor: pointer;" class="d-flex justify-content-center  mt-2 w-100">
+                                <a href="html-pages/login.html">Login</a>
+                            </p>
+
+                        </div>
+                        <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center mt-2">
+                            <div class="d-flex flex-column m-3">
+                                <h3 class="d-flex justify-content-start">
+                                    mh1dk
+                                </h3>
+                                <p class="d-flex justify-content-center mt-2">
+                                    Follow us for exclusive updates, inspiration, and connection. Join the journey!
+                                </p>
+                                <div class="mt-4">
+                                    <i style="cursor: pointer;" class="fa fa-instagram p-1"></i>
+                                    <i style="cursor: pointer;" class="fa fa-facebook-f p-1"></i>
+                                    <i style="cursor: pointer;" class="fa fa-twitter p-1"></i>
+                                    <i style="cursor: pointer;" class="fa fa-linkedin p-1"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center mb-3">© Copyright 2022</div>
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+                            
 
 
 </body>
