@@ -271,7 +271,7 @@ const product = [
                         <div class="card-body">
                             <h5 class="card-title">${item.productTitle} ${item.size}</h5>
                             <p class="card-text">${item.price}</p>
-                            <a style="background-color: #81BFD3;" href="#" class="btn">Let's shop</a>
+                            <a style="background-color: #81BFD3;" href="../html-pages/product-detail.html" class="btn">Let's shop</a>
                         </div>
                     </div>
                 `;
