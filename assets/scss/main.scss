@@ -56,10 +56,12 @@ a {
 .nav-res-sm{
   position: fixed;
   bottom: 0;
+  z-index: 55;
 }
 @media (min-width: 1024px) {
   .nav-res-sm{
     display: none;
+    z-index: 55;
   }
 }
 
@@ -83,8 +85,6 @@ a {
   width: 40vw;
   height: 75vh;
   background-color: $main-bg;
-  // border-radius: 50% 20% 35% 15%;
-  // box-shadow: 7px 3px 4px $main-bg;
   display: flex;
   justify-content: center;
   align-items: center;
