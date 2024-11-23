@@ -1,2 +1,2 @@
 # rend-shop <br>
-read main branch 
+read master branch 
