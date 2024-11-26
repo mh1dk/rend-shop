@@ -61,10 +61,6 @@ html {
     opacity: 1;
   }
 }
-.bg-selected {
-  background-color: rgba(0, 0, 0, 0.256);
-}
-
 .selected-filters .filter-item {
   background-color: #81BFD3;
   color: white;

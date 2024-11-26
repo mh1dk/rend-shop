@@ -12,20 +12,20 @@ const product = [
     { id: "jordan", color: "blue", size: "41", productTitle: "Air jordan long", price: "136$", img: '../assets/images/cards/14.png' },
     { id: "jordan", color: "black", size: "43", productTitle: "Black Air jordan", price: "117$", img: '../assets/images/cards/12.png' },
     { id: "airforce", color: "gray", size: "39", productTitle: "Air force new", price: "98$", img: '../assets/images/cards/13.png' },
-    { id: "other", color: "black", size: "43", productTitle: "undefinded shoes", price: "155$", img: '../assets/images/cards/15.png' },
+    { id: "other", color: "black", size: "43", productTitle: "undefined shoes", price: "155$", img: '../assets/images/cards/15.png' },
     { id: "running", color: "black", size: "42", productTitle: "Running nike", price: "48$", img: '../assets/images/cards/16.png' },
     { id: "other", color: "green", size: "38", productTitle: "Grass nike", price: "65$", img: '../assets/images/cards/29.png' },
     { id: "other", color: "white", size: "44", productTitle: "nike girl", price: "78$", img: '../assets/images/cards/18.png' },
     { id: "running", color: "other", size: "42", productTitle: "Nike namad", price: "98$", img: '../assets/images/cards/23.png' },
     { id: "other", color: "black", size: "43", productTitle: "Nike running", price: "85$", img: '../assets/images/cards/20.png' },
-    { id: "jordan", color: "white", size: "42", productTitle: "Vollyball nike", price: "58$", img: '../assets/images/cards/21.png' },
+    { id: "jordan", color: "white", size: "42", productTitle: "Volleyball nike", price: "58$", img: '../assets/images/cards/21.png' },
     { id: "running", color: "black", size: "44", productTitle: "Nike running", price: "84$", img: '../assets/images/cards/22.png' },
     { id: "airforce", color: "black", size: "41", productTitle: "Dark airforce", price: "69$", img: '../assets/images/cards/24.png' },
     { id: "airforce", color: "red", size: "41", productTitle: "red Airforce", price: "75$", img: '../assets/images/cards/27.png' },
     { id: "other", color: "blue", size: "43", productTitle: "Nike soccer", price: "75$", img: '../assets/images/cards/28.png' },
-
-
 ];
+
+
 
 // (function render() {
 //     const row = document.getElementById('row');
@@ -188,11 +188,11 @@ const product = [
 
 
 
-
 (function render() {
     const row = document.getElementById('row');
     const selectedFiltersList = document.getElementById('selected-filters-list');
-    const searchInput = document.querySelector('input[type="search"]'); // Select the search input
+    const searchInput = document.querySelector('input[type="search"]');
+    const paginationContainer = document.querySelector('.pagination');
 
     const filters = {
         id: [],
@@ -202,9 +202,13 @@ const product = [
         search: "",
     };
 
+    const pagination = {
+        currentPage: 1,
+        itemsPerPage: 6,
+    };
+
     const updateSelectedFiltersDisplay = () => {
         selectedFiltersList.innerHTML = '';
-
         Object.keys(filters).forEach(filterType => {
             if (filterType === 'price' && filters.price) {
                 const filterItem = document.createElement('div');
@@ -247,36 +251,87 @@ const product = [
                 filters[filterType].push(value);
             }
         }
-
         element.classList.toggle('bg-selected');
         renderProducts();
         updateSelectedFiltersDisplay();
     };
 
+    const renderPagination = (filteredProducts) => {
+        paginationContainer.innerHTML = '';
+        const totalPages = Math.ceil(filteredProducts.length / pagination.itemsPerPage);
+
+        if (totalPages <= 1) return;
+
+        const previousButton = document.createElement('li');
+        previousButton.classList.add('page-item');
+        previousButton.innerHTML = `<a class="page-link" href="#">Previous</a>`;
+        previousButton.classList.toggle('disabled', pagination.currentPage === 1);
+        previousButton.addEventListener('click', () => {
+            if (pagination.currentPage > 1) {
+                pagination.currentPage--;
+                renderProducts();
+            }
+        });
+        paginationContainer.appendChild(previousButton);
+
+        for (let i = 1; i <= totalPages; i++) {
+            const pageItem = document.createElement('li');
+            pageItem.classList.add('page-item');
+            pageItem.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+            if (i === pagination.currentPage) {
+                pageItem.classList.add('active');
+            }
+            pageItem.addEventListener('click', () => {
+                pagination.currentPage = i;
+                renderProducts();
+            });
+            paginationContainer.appendChild(pageItem);
+        }
+
+        const nextButton = document.createElement('li');
+        nextButton.classList.add('page-item');
+        nextButton.innerHTML = `<a class="page-link" href="#">Next</a>`;
+        nextButton.classList.toggle('disabled', pagination.currentPage === totalPages);
+        nextButton.addEventListener('click', () => {
+            if (pagination.currentPage < totalPages) {
+                pagination.currentPage++;
+                renderProducts();
+            }
+        });
+        paginationContainer.appendChild(nextButton);
+    };
+
     const renderProducts = () => {
         row.innerHTML = '';
-        product.forEach(item => {
+        const filteredProducts = product.filter(item => {
             const matchesCategory = filters.id.length === 0 || filters.id.includes(item.id);
             const matchesColor = filters.color.length === 0 || filters.color.includes(item.color);
             const matchesSize = filters.size.length === 0 || filters.size.includes(item.size);
             const matchesPrice = !filters.price || filters.price.value(item);
             const matchesSearch = !filters.search || item.productTitle.toLowerCase().includes(filters.search.toLowerCase());
 
-            if (matchesCategory && matchesColor && matchesSize && matchesPrice && matchesSearch) {
-                const col = document.createElement('div');
-                col.classList.add('col-lg-4');
-                col.innerHTML = `
-                    <div class="card mb-2">
-                        <img src="${item.img}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">${item.productTitle} ${item.size}</h5>
-                            <p class="card-text">${item.price}</p>
-                            <a style="background-color: #81BFD3;" href="../html-pages/product-detail.html" class="btn">Let's shop</a>
-                        </div>
+            return matchesCategory && matchesColor && matchesSize && matchesPrice && matchesSearch;
+        });
+
+        renderPagination(filteredProducts);
+
+        const startIndex = (pagination.currentPage - 1) * pagination.itemsPerPage;
+        const paginatedProducts = filteredProducts.slice(startIndex, startIndex + pagination.itemsPerPage);
+
+        paginatedProducts.forEach(item => {
+            const col = document.createElement('div');
+            col.classList.add('col-lg-4');
+            col.innerHTML = `
+                <div class="card mb-2">
+                    <img src="${item.img}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${item.productTitle} ${item.size}</h5>
+                        <p class="card-text">${item.price}</p>
+                        <a style="background-color: #81BFD3;" href="../html-pages/product-detail.html" class="btn" id="open-data">Let's shop</a>
                     </div>
-                `;
-                row.appendChild(col);
-            }
+                </div>
+            `;
+            row.appendChild(col);
         });
     };
 
@@ -284,32 +339,25 @@ const product = [
 
     searchInput.addEventListener('input', (e) => {
         filters.search = e.target.value;
+        pagination.currentPage = 1;
         renderProducts();
     });
 
-
-    document.getElementById('all').addEventListener('click', (e) => {
+    document.getElementById('all').addEventListener('click', () => {
         filters.id = [];
         filters.color = [];
         filters.size = [];
         filters.price = null;
         filters.search = "";
-
+        pagination.currentPage = 1;
         document.querySelectorAll('.bg-selected').forEach(el => el.classList.remove('bg-selected'));
-
         renderProducts();
         updateSelectedFiltersDisplay();
     });
 
     ['airforce', 'jordan', 'others', 'running'].forEach(category => {
         document.getElementById(category).addEventListener('click', (e) => {
-            const element = e.target;
-            if (category === 'all') {
-                filters.id = [];
-                document.querySelectorAll('.bg-selected').forEach(el => el.classList.remove('bg-selected'));
-            } else {
-                toggleFilter(category, 'id', element, `Category: ${category}`);
-            }
+            toggleFilter(category, 'id', e.target, `Category: ${category}`);
         });
     });
 
