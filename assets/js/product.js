@@ -25,8 +25,6 @@ const product = [
     { id: "other", color: "blue", size: "43", productTitle: "Nike soccer", price: "75$", img: '../assets/images/cards/28.png' },
 ];
 
-
-
 // (function render() {
 //     const row = document.getElementById('row');
 //     const loadingContainer = document.getElementById('loading');
@@ -183,10 +181,6 @@ const product = [
 
    
 // })();
-
-
-
-
 
 (function render() {
     const row = document.getElementById('row');
