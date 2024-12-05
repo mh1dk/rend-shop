@@ -18,8 +18,8 @@
       const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
 
       if (isVisible && !obj.classList.contains("animated")) {
-        animateValue(obj,0, 100, 1500);
-        obj.classList.add("animated"); // جلوگیری از اجرای دوباره انیمیشن
+        animateValue(obj,0, 100, 3500);
+        obj.classList.add("animated");
       }
     });
   };
