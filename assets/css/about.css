@@ -10,12 +10,23 @@
 .about-member {
   width: 35vw;
   height: 25vh;
-  background-color: rgba(192, 192, 192, 0.885);
+  background-color: #81BFD3;
 }
 
 .more-info {
-  background-color: rgba(192, 192, 192, 0.885);
+  background-color: #81BFD3;
   height: 5.65vh;
+}
+
+@media (max-width: 667px) {
+  .cntct {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .cntct button {
+    font-size: 13px;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */
