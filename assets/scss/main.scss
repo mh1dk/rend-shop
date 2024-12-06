@@ -129,22 +129,6 @@ a {
   }
 }
 
-
-//  reason for customers
-
-@media (max-width: 667px) {
-  .reason-res{
-    display: none;
-  }
-
-}
-@media (max-width: 1024px) {
-  .reason-res{
-    display: none;
-  }
-
-}
-
 .detail{
   width: 6vw;
   background-color: transparent;
@@ -325,15 +309,6 @@ a {
   
   }
 }
-
-
-
-
-
-
-
-
-
 .box1{
   display: flex;
   justify-content: center;
@@ -352,10 +327,6 @@ a {
   background-color: red;
   // display: none;
 }
-
-
-
-
 // coming soon 
 
 .coming-card{
@@ -395,12 +366,7 @@ a {
   }
 }
 
-
-
 // footer 
-
-
-
 
 .animate-wave {
   position: relative;
@@ -442,26 +408,9 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// login
-
-
+// login 
 .login-card{
   background-image: url('../images/login/872c.avif');
   background-position: center;background-size: cover;
 }
+
