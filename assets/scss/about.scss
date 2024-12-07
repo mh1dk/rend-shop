@@ -8,6 +8,19 @@
     // background-repeat: no-repeat;
     clip-path: polygon(62% 14%, 73% 4%, 87% 0%, 87% 10%, 70% 100%, 0 100%, 10% 82%, 0 40%, 28% 14%);
 }
+@media (max-width: 667px) {
+  .res-triangle{
+    display: none;
+  }
+
+}
+@media (max-width: 1024px) {
+  .res-triangle{
+    display: none;
+  }
+
+}
+
 
 .about-member{
     width: 35vw;

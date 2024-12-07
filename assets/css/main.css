@@ -25,6 +25,42 @@ a {
   color: black;
 }
 
+@media (min-width: 1024px) {
+  .head-sm {
+    display: none;
+  }
+}
+.header-img-sm {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 50% 50% 0 0;
+}
+
+.burger-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: translateY(-100%); /* Initially position the menu above the viewport */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 15547;
+  color: #fff;
+}
+
+.burger-menu.open {
+  transform: translateY(0); /* Move the menu into view when opened */
+}
+
 @media (max-width: 667px) {
   .res-nav {
     display: none;
@@ -39,6 +75,8 @@ a {
   position: fixed;
   bottom: 0;
   z-index: 55;
+  width: 100%;
+  background-color: #fff;
 }
 
 @media (min-width: 1024px) {
@@ -294,12 +332,6 @@ a {
   color: #fff;
 }
 
-.coming-card:hover .overlay {
-  height: 100%;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.275);
-}
-
 .trust {
   transition: 1s;
   cursor: pointer;
@@ -348,6 +380,14 @@ a {
   background-image: url("../images/login/872c.avif");
   background-position: center;
   background-size: cover;
+}
+
+.img-adv {
+  cursor: pointer;
+  transition: 0.6s;
+}
+.img-adv:hover {
+  opacity: 70%;
 }
 
 /*# sourceMappingURL=main.css.map */

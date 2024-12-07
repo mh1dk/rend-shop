@@ -35,6 +35,97 @@ a {
   color: black;
 }
 
+
+// header content for sm devices 
+
+@media (min-width: 1024px) {
+  .head-sm{
+    display: none;
+    
+  }
+}
+
+
+.header-img-sm{
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 50% 50% 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+// .coming-card:hover .overlay {
+//   height: 100%;
+//   bottom: 0;
+//   background-color: rgba(0, 0, 0, 0.275);
+  
+// }
+
+// .burger-menu{
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   background-color: black;
+//   overflow: hidden;
+//   width: 100%;
+//   height: 0;
+//   transition: 4.5s ;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   z-index: 1;
+//   color: #fff;
+// }
+//  .burger-menu{
+//   height: 100%;
+//   bottom: 0;
+//   background-color: rgba(0, 0, 0, 0.275);
+// }
+
+
+
+
+
+.burger-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: translateY(-100%);  /* Initially position the menu above the viewport */
+  transition: transform 0.5s ease-in-out;  /* Smooth transition for sliding effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 15547;
+  color: #fff;
+}
+
+.burger-menu.open {
+  transform: translateY(0);  /* Move the menu into view when opened */
+}
+
+
+
+
+
+
+
 // navbar
 
 @media (max-width: 667px) {
@@ -57,7 +148,8 @@ a {
   position: fixed;
   bottom: 0;
   z-index: 55;
-  // background-color: #fff;
+  width: 100%;
+  background-color: #fff;
 }
 @media (min-width: 1024px) {
   .nav-res-sm{
@@ -248,7 +340,6 @@ a {
   display: flex;
   cursor: pointer;
   width: 98%;
-  // padding-bottom: 15px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -314,8 +405,6 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  // position: absolute;
-  // background-color: #9dde77;
   z-index: 1;
 }
 .box2{
@@ -325,14 +414,13 @@ a {
 
   position: absolute;
   background-color: red;
-  // display: none;
 }
 // coming soon 
 
 .coming-card{
   position: relative;
 }
-.overlay {
+.overlay{
   position: absolute;
   bottom: 0;
   left: 0;
@@ -347,12 +435,6 @@ a {
   align-items: center;
   flex-direction: column;
   color: #fff;
-  
-}
-.coming-card:hover .overlay {
-  height: 100%;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.275);
   
 }
 
@@ -414,3 +496,16 @@ a {
   background-position: center;background-size: cover;
 }
 
+
+
+
+// famous people adv 
+
+
+.img-adv{
+  cursor: pointer;
+  transition: 0.6s;
+  &:hover{
+    opacity: 70%;
+  }
+}
