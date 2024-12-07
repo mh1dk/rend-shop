@@ -429,7 +429,7 @@ a {
   overflow: hidden;
   width: 100%;
   height: 0;
-  transition: .5s ;
+  transition: background-color 5s, height 0.5s ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -439,6 +439,12 @@ a {
 }
 
 
+.coming-card:hover .overlay {
+height: 100%;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.275);
+  
+}
 // trusted companies 
 .trust{
   transition: 1s;

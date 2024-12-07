@@ -1,28 +1,28 @@
 const product = [
-    { id: "airforce", color: "white", size: "39", productTitle: "nike Airforce", price: "65$", img: '../assets/images/cards/one.png' },
-    { id: "jordan", color: "brown", size: "42", productTitle: "Airjordan brown", price: "52$", img: '../assets/images/cards/three.png' },
-    { id: "others", color: "white", size: "44", productTitle: "Nike felan", price: "41$", img: '../assets/images/cards/two.png' },
-    { id: "others", color: "black", size: "43", productTitle: "nike black", price: "115$", img: '../assets/images/cards/four.png' },
-    { id: "jordan", color: "white", size: "39", productTitle: "Air jordan one", price: "98$", img: '../assets/images/cards/five.png' },
-    { id: "others", color: "white", size: "38", productTitle: "Nike felan", price: "88$", img: '../assets/images/cards/six.png' },
-    { id: "running", color: "black", size: "42", productTitle: "Running nike", price: "74$", img: '../assets/images/cards/seven.png' },
-    { id: "jordan", color: "blue", size: "41", productTitle: "Air jordan one", price: "66$", img: '../assets/images/cards/nine.png' },
-    { id: "running", color: "white", size: "39", productTitle: "invincible running", price: "39$", img: '../assets/images/cards/eight.png' },
-    { id: "running", color: "red", size: "41", productTitle: "Nike running", price: "126$", img: '../assets/images/cards/ten.png' },
-    { id: "jordan", color: "blue", size: "41", productTitle: "Air jordan long", price: "136$", img: '../assets/images/cards/14.png' },
-    { id: "jordan", color: "black", size: "43", productTitle: "Black Air jordan", price: "117$", img: '../assets/images/cards/12.png' },
-    { id: "airforce", color: "gray", size: "39", productTitle: "Air force new", price: "98$", img: '../assets/images/cards/13.png' },
-    { id: "other", color: "black", size: "43", productTitle: "undefined shoes", price: "155$", img: '../assets/images/cards/15.png' },
-    { id: "running", color: "black", size: "42", productTitle: "Running nike", price: "48$", img: '../assets/images/cards/16.png' },
-    { id: "other", color: "green", size: "38", productTitle: "Grass nike", price: "65$", img: '../assets/images/cards/29.png' },
-    { id: "other", color: "white", size: "44", productTitle: "nike girl", price: "78$", img: '../assets/images/cards/18.png' },
-    { id: "running", color: "other", size: "42", productTitle: "Nike namad", price: "98$", img: '../assets/images/cards/23.png' },
-    { id: "other", color: "black", size: "43", productTitle: "Nike running", price: "85$", img: '../assets/images/cards/20.png' },
-    { id: "jordan", color: "white", size: "42", productTitle: "Volleyball nike", price: "58$", img: '../assets/images/cards/21.png' },
-    { id: "running", color: "black", size: "44", productTitle: "Nike running", price: "84$", img: '../assets/images/cards/22.png' },
-    { id: "airforce", color: "black", size: "41", productTitle: "Dark airforce", price: "69$", img: '../assets/images/cards/24.png' },
-    { id: "airforce", color: "red", size: "41", productTitle: "red Airforce", price: "75$", img: '../assets/images/cards/27.png' },
-    { id: "other", color: "blue", size: "43", productTitle: "Nike soccer", price: "75$", img: '../assets/images/cards/28.png' },
+    { num: 1, id: "airforce", color: "white", size: "39", productTitle: "nike Airforce", price: "65$", img: '../assets/images/cards/one.png' },
+    { num: 2, id: "jordan", color: "brown", size: "42", productTitle: "Airjordan brown", price: "52$", img: '../assets/images/cards/three.png' },
+    { num: 3, id: "others", color: "white", size: "44", productTitle: "Nike felan", price: "41$", img: '../assets/images/cards/two.png' },
+    { num: 4, id: "others", color: "black", size: "43", productTitle: "nike black", price: "115$", img: '../assets/images/cards/four.png' },
+    { num: 5, id: "jordan", color: "white", size: "39", productTitle: "Air jordan one", price: "98$", img: '../assets/images/cards/five.png' },
+    { num: 6, id: "others", color: "white", size: "38", productTitle: "Nike felan", price: "88$", img: '../assets/images/cards/six.png' },
+    { num: 7, id: "running", color: "black", size: "42", productTitle: "Running nike", price: "74$", img: '../assets/images/cards/seven.png' },
+    { num: 8, id: "jordan", color: "blue", size: "41", productTitle: "Air jordan one", price: "66$", img: '../assets/images/cards/nine.png' },
+    { num: 9, id: "running", color: "white", size: "39", productTitle: "invincible running", price: "39$", img: '../assets/images/cards/eight.png' },
+    { num: 10, id: "running", color: "red", size: "41", productTitle: "Nike running", price: "126$", img: '../assets/images/cards/ten.png' },
+    { num: 11, id: "jordan", color: "blue", size: "41", productTitle: "Air jordan long", price: "136$", img: '../assets/images/cards/14.png' },
+    { num: 12, id: "jordan", color: "black", size: "43", productTitle: "Black Air jordan", price: "117$", img: '../assets/images/cards/12.png' },
+    { num: 13, id: "airforce", color: "gray", size: "39", productTitle: "Air force new", price: "98$", img: '../assets/images/cards/13.png' },
+    { num: 14, id: "other", color: "black", size: "43", productTitle: "undefined shoes", price: "155$", img: '../assets/images/cards/15.png' },
+    { num: 15, id: "running", color: "black", size: "42", productTitle: "Running nike", price: "48$", img: '../assets/images/cards/16.png' },
+    { num: 16, id: "other", color: "green", size: "38", productTitle: "Grass nike", price: "65$", img: '../assets/images/cards/29.png' },
+    { num: 17, id: "other", color: "white", size: "44", productTitle: "nike girl", price: "78$", img: '../assets/images/cards/18.png' },
+    { num: 18, id: "running", color: "other", size: "42", productTitle: "Nike namad", price: "98$", img: '../assets/images/cards/23.png' },
+    { num: 19, id: "other", color: "black", size: "43", productTitle: "Nike running", price: "85$", img: '../assets/images/cards/20.png' },
+    { num: 20, id: "jordan", color: "white", size: "42", productTitle: "Volleyball nike", price: "58$", img: '../assets/images/cards/21.png' },
+    { num: 21, id: "running", color: "black", size: "44", productTitle: "Nike running", price: "84$", img: '../assets/images/cards/22.png' },
+    { num: 22, id: "airforce", color: "black", size: "41", productTitle: "Dark airforce", price: "69$", img: '../assets/images/cards/24.png' },
+    { num: 23, id: "airforce", color: "red", size: "41", productTitle: "red Airforce", price: "75$", img: '../assets/images/cards/27.png' },
+    { num: 24, id: "other", color: "blue", size: "43", productTitle: "Nike soccer", price: "75$", img: '../assets/images/cards/28.png' },
 ];
 
 // (function render() {
@@ -179,7 +179,7 @@ const product = [
 //         ))
 
 
-   
+
 // })();
 
 (function render() {
@@ -200,6 +200,9 @@ const product = [
         currentPage: 1,
         itemsPerPage: 6,
     };
+
+
+    // localStorage.setItem('user' , product.id);
 
     const updateSelectedFiltersDisplay = () => {
         selectedFiltersList.innerHTML = '';
@@ -321,15 +324,44 @@ const product = [
                     <div class="card-body">
                         <h5 class="card-title">${item.productTitle} ${item.size}</h5>
                         <p class="card-text">${item.price}</p>
-                        <a style="background-color: #81BFD3;" href="../html-pages/product-detail.html" class="btn" id="open-data">Let's shop</a>
+                        <div style="background-color: #81BFD3;" class="btn" id="open-data">buy now</div>
                     </div>
                 </div>
-            `;
+            `
             row.appendChild(col);
         });
     };
 
     renderProducts();
+
+
+    const goShopping = (e) => {
+        e.preventDefault();
+        localStorage.setItem("product-data", product.num);
+        navigation.navigate('../html-pages/product-detail.html')
+
+
+
+    }
+
+
+    const goDetail = document.getElementById("open-data");
+    goDetail.addEventListener("click", goShopping);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     searchInput.addEventListener('input', (e) => {
         filters.search = e.target.value;
@@ -384,4 +416,18 @@ const product = [
             toggleFilter(priceFilter.value, 'price', element, priceFilter.label);
         });
     });
+
+
+
+
+
+    const filterBtn = document.getElementById("filter-btn");
+    const filter = document.getElementById("filter");
+    const close = document.getElementById("close");
+    filterBtn.addEventListener("click", () => {
+        filter.classList.toggle("d-none")
+    });
+    close.addEventListener("click", () => {
+        filter.classList.add('d-none')
+    })
 })();

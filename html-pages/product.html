@@ -20,6 +20,152 @@
 </head>
 
 <body>
+    <!-- filter part for sm devices -->
+    <div class="box-filter-res">
+
+    <div class="position-relative bg-primary d-none" id="filter">
+        <div class="w-50 bg-white w-100 p-4 z-3  position-absolute ">
+
+
+            <div style="right: 65em; height: 100%; position: sticky;top: 45px;" class="">
+                <div class="left-side ">
+
+                    <div class="d-flex row align-items-center">
+                    <h3 class="pt-2 col-6" >
+                        Filter
+                    </h3>
+                    <h3 class="d-flex col-6 justify-content-end" id="close">
+                        ✕
+                    </h3>
+                    </div>
+                    <div class="selected-filters mt-4">
+                        <h5>Selected Filters:</h5>
+                        <div style="color: #81BFD3;" id="selected-filters-list" class="d-flex flex-wrap gap-2">
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <p style="cursor: pointer;font-size: larger;" id="all">
+                            All products
+                        </p>
+                        <p style="cursor: pointer;font-size: larger;" id="airforce">
+                            Airforce shoes
+                        </p>
+                        <p style="cursor: pointer;font-size: larger;" id="jordan">
+                            Jordan shoes
+                        </p>
+                        <p style="cursor: pointer;font-size: larger;" id="running">
+                            running shoes
+                        </p>
+                        <p style="cursor: pointer;font-size: larger;" id="others">
+                            other shoes
+                        </p>
+                    </div>
+
+
+                    <div style="margin-left: -1.3em;" class="accordion bg-white" id="accordionExample">
+                        <div style="border: none;" class="accordion-item bg-white">
+                            <h2 class="accordion-header bg-white">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Colours
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse "data-bs-parent="#accordionExample">
+                                <div class="accordion-body ">
+
+                                    <div class="row d-flex justify-content-center align-items-center">
+                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="black">Black
+                                        </div>
+                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="white">White
+                                        </div>
+                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="brown">Brown
+                                        </div>
+                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="green">Green
+                                        </div>
+                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="blue">Blue
+                                        </div>
+                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="red">red
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="border: none;" class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Available Size
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row d-flex justify-content-center align-items-center">
+                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="38">38
+                                        </div>
+                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="39">39
+                                        </div>
+                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="40">40
+                                        </div>
+                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="41">41
+                                        </div>
+                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="42">42
+                                        </div>
+                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="43">43
+                                        </div>
+                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="44">44
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div style="border: none;" class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Shop by price
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row d-flex justify-content-center align-items-center">
+                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="50">
+                                            < 50 </div>
+                                                <div style="cursor: pointer;"
+                                                    class="col-lg-3 border text-center m-1 size" id="60">
+                                                    < 60</div>
+                                                        <div style="cursor: pointer;"
+                                                            class="col-lg-3 border text-center m-1 size" id="70">
+                                                            < 70</div>
+                                                                <div style="cursor: pointer;"
+                                                                    class="col-lg-3 border text-center m-1 size" id="80">
+                                                                    < 80</div>
+                                                                        <div style="cursor: pointer;"
+                                                                            class="col-lg-3 border text-center m-1 size" id="90">
+                                                                            < 90</div>
+                                                                                <div style="cursor: pointer;"
+                                                                                    class="col-lg-3 border text-center m-1 size" id="100">
+                                                                                    < 100</div>
+                                                                                        <div style="cursor: pointer;"
+                                                                                            class="col-lg-3 border text-center m-1 size" id="101">
+                                                                                            > 101</div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                    </div>
+        </div>
+    </div>
+</div>
+
+
+
+
     <!-- navbar -->
     <div class="res-nav position-sticky top-0 z-3 bg-white">
         <div style="width: 100.8%;" class="row mt-1">
@@ -198,14 +344,14 @@
 
 <!-- search  -->
 
-        <div class="row mt-5">
+        <div class="row mt-1">
             <div class="col-lg-3 mb-2">
 
                 <input style="font-size: 22px;" class="p-3 w-100 rounded-1 border h-100" type="search"
                     placeholder="search">
 
             </div>
-            <div class="col-lg-9 rounded-1 bg-body-secondary mb-2">
+            <div  class="col-lg-9 rounded-1 bg-body-secondary mb-2">
 
 
 
@@ -247,9 +393,14 @@
         </div>
 
 
+<!-- filter sm  btn-->
+        <div class="filter-sec-sm">
+            <div style="background-color: #e9ecef" class="btn" id="filter-btn">filter</div>
+        </div>
+
         <!-- card left -->
-        <div class="row d-flex">
-            <div style="right: 65em; height: 100%; position: sticky;top: 45px;" class=" col-lg-3">
+        <div class="row d-flex ">
+            <div style="right: 65em; height: 100%; position: sticky;top: 45px;" class=" col-lg-3 filter-sm">
                 <div class="left-side">
 
 
@@ -259,7 +410,6 @@
                     <div class="selected-filters mt-4">
                         <h5>Selected Filters:</h5>
                         <div style="color: #81BFD3;" id="selected-filters-list" class="d-flex flex-wrap gap-2">
-                            <!-- Selected filters will appear here -->
                         </div>
                     </div>
                     
@@ -376,28 +526,11 @@
                                                                 </div>
                                                         </div>
                                                 </div>
-
-
-
-
-
-
-
                                         </div>
-
-
                                     </div>
-
-
-
                                     <div class="col-lg-9">
                                         <div class="mt-3">
                                             <div class="row" id="row">
-
-
-
-
-
                                             </div>
                                         </div>
                                     </div>

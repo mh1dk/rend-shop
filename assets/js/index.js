@@ -103,24 +103,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-
-// const burgerBtn = document.getElementById("burger-btn");
-// const burger = document.getElementById("burger");
-// const close = document.getElementById("close");
-// const wel = document.getElementById("wel");
-// burgerBtn.addEventListener("click" , () => {
-//     burger.classList.remove("d-none");
-//     burger.classList.add(".burger-menu");
-// });
-
-// close.addEventListener("click",() => {
-//     burger.classList.add("d-none")
-// });
-
-
-
 const burgerBtn = document.getElementById("burger-btn");
 const burger = document.getElementById("burger");
 const close = document.getElementById("close");
