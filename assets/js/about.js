@@ -25,3 +25,31 @@ const startAnimation = () => {
 };
 
 window.addEventListener("scroll", startAnimation);
+
+
+
+
+
+const burgerBtn = document.getElementById("burger-btn");
+const burger = document.getElementById("burger");
+const close = document.getElementById("close");
+
+burgerBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    
+    burger.classList.remove("d-none");
+    burger.classList.add("open");
+});
+close.addEventListener("click", (e) => {
+    e.stopPropagation();
+    burger.classList.remove("open");
+    setTimeout(() => burger.classList.add("d-none"), 0); 
+});
+
+document.addEventListener("click", (e) => {
+    if (!burger.contains(e.target) && !burgerBtn.contains(e.target)) {
+        burger.classList.remove("open");
+        setTimeout(() => burger.classList.add("d-none"), 0); 
+    }
+});
+
