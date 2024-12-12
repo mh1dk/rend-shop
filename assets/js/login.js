@@ -6,11 +6,12 @@
         { id: 3, userName: 'reza', pass: '1234' },
         { id: 4, userName: 'soli', pass: '1234' },
     ];
-
+    const alert = document.getElementById("alert");
+    const alertValid = document.getElementById("alert-valid");
+    const username = document.getElementById('username');
+    const pass = document.getElementById('pass');
     const handleSubmit = (e) => {
         e.preventDefault();
-        const username = document.getElementById('username');
-        const pass = document.getElementById('pass');
 
 
         
@@ -18,36 +19,19 @@
         if(user.length && pass.value === user[0].pass){
             console.log('login success');
 
-            const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-            const appendAlert = (message, type) => {
-              const wrapper = document.createElement('div')
-              wrapper.innerHTML = [
-                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-                `   <div>${message}</div>`,
-                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-                '</div>'
-              ].join('')
-            
-              alertPlaceholder.append(wrapper)
-            }
-            
-            const alertTrigger = document.getElementById('liveAlertBtn')
-            if (alertTrigger) {
-              alertTrigger.addEventListener('click', () => {
-              
-                    
-                    appendAlert('Nice, you login successfully', 'success')
-              })
-            }
-
-
+  
             localStorage.setItem('user-name', JSON.stringify(user[0].userName));
+            alert.classList.add("d-none");
+            alertValid.classList.remove("d-none");
             setTimeout(() => {
 
                 navigation.navigate('../index.html')            
-            },5000)
+            },1200)
         }else{
             console.log('invalid data');
+            alert.classList.remove("d-none");
+            username.value = '';
+            pass.value = '';
             
         }
     }
