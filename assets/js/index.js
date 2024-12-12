@@ -30,6 +30,7 @@ const showUserName = () => {
 
 
 
+// carousel 
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -102,6 +103,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+
+// burger 
 
 const burgerBtn = document.getElementById("burger-btn");
 const burger = document.getElementById("burger");

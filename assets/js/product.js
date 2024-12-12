@@ -1,42 +1,29 @@
 const product = [
-    { num: 1, id: "airforce", color: "white", size: "39", productTitle: "nike Airforce",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "65$", img: '../assets/images/cards/one.png' },
-    { num: 2, id: "jordan", color: "brown", size: "42", productTitle: "Airjordan brown",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "52$", img: '../assets/images/cards/three.png' },
-    { num: 3, id: "others", color: "white", size: "44", productTitle: "Nike felan",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "41$", img: '../assets/images/cards/two.png' },
-    { num: 4, id: "others", color: "black", size: "43", productTitle: "nike black",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "115$", img: '../assets/images/cards/four.png' },
-    { num: 5, id: "jordan", color: "white", size: "39", productTitle: "Air jordan one",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "98$", img: '../assets/images/cards/five.png' },
-    { num: 6, id: "others", color: "white", size: "38", productTitle: "Nike felan",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "88$", img: '../assets/images/cards/six.png' },
-    { num: 7, id: "running", color: "black", size: "42", productTitle: "Running nike",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "74$", img: '../assets/images/cards/seven.png' },
-    { num: 8, id: "jordan", color: "blue", size: "41", productTitle: "Air jordan one",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "66$", img: '../assets/images/cards/nine.png' },
-    { num: 9, id: "running", color: "white", size: "39", productTitle: "invincible running",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "39$", img: '../assets/images/cards/eight.png' },
-    { num: 10, id: "running", color: "red", size: "41", productTitle: "Nike running",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "126$", img: '../assets/images/cards/ten.png' },
-    { num: 11, id: "jordan", color: "blue", size: "41", productTitle: "Air jordan long",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "136$", img: '../assets/images/cards/14.png' },
-    { num: 12, id: "jordan", color: "black", size: "43", productTitle: "Black Air jordan",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "117$", img: '../assets/images/cards/12.png' },
-    { num: 13, id: "airforce", color: "gray", size: "39", productTitle: "Air force new",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "98$", img: '../assets/images/cards/13.png' },
-    { num: 14, id: "other", color: "black", size: "43", productTitle: "undefined shoes",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "155$", img: '../assets/images/cards/15.png' },
-    { num: 15, id: "running", color: "black", size: "42", productTitle: "Running nike",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "48$", img: '../assets/images/cards/16.png' },
-    { num: 16, id: "other", color: "green", size: "38", productTitle: "Grass nike",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "65$", img: '../assets/images/cards/29.png' },
-    { num: 17, id: "other", color: "white", size: "44", productTitle: "nike girl",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "78$", img: '../assets/images/cards/18.png' },
-    { num: 18, id: "running", color: "other", size: "42", productTitle: "Nike namad",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "98$", img: '../assets/images/cards/23.png' },
-    { num: 19, id: "other", color: "black", size: "43", productTitle: "Nike running",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "85$", img: '../assets/images/cards/20.png' },
-    { num: 20, id: "jordan", color: "white", size: "42", productTitle: "Volleyball nike",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "58$", img: '../assets/images/cards/21.png' },
-    { num: 21, id: "running", color: "black", size: "44", productTitle: "Nike running",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "84$", img: '../assets/images/cards/22.png' },
-    { num: 22, id: "airforce", color: "black", size: "41", productTitle: "Dark airforce",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "69$", img: '../assets/images/cards/24.png' },
-    { num: 23, id: "airforce", color: "red", size: "41", productTitle: "red Airforce",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "75$", img: '../assets/images/cards/27.png' },
-    { num: 24, id: "other", color: "blue", size: "43", productTitle: "Nike soccer",  desc:"Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "75$", img: '../assets/images/cards/28.png' },
+    { num: 1, id: "airforce", color: "white", size: "39", productTitle: "nike Airforce", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "65$", img: '../assets/images/cards/one.png' },
+    { num: 2, id: "jordan", color: "brown", size: "42", productTitle: "Airjordan brown", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "52$", img: '../assets/images/cards/three.png' },
+    { num: 3, id: "others", color: "white", size: "44", productTitle: "Nike felan", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "41$", img: '../assets/images/cards/two.png' },
+    { num: 4, id: "others", color: "black", size: "43", productTitle: "nike black", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "115$", img: '../assets/images/cards/four.png' },
+    { num: 5, id: "jordan", color: "white", size: "39", productTitle: "Air jordan one", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "98$", img: '../assets/images/cards/five.png' },
+    { num: 6, id: "others", color: "white", size: "38", productTitle: "Nike felan", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "88$", img: '../assets/images/cards/six.png' },
+    { num: 7, id: "running", color: "black", size: "42", productTitle: "Running nike", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "74$", img: '../assets/images/cards/seven.png' },
+    { num: 8, id: "jordan", color: "blue", size: "41", productTitle: "Air jordan one", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "66$", img: '../assets/images/cards/nine.png' },
+    { num: 9, id: "running", color: "white", size: "39", productTitle: "invincible running", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "39$", img: '../assets/images/cards/eight.png' },
+    { num: 10, id: "running", color: "red", size: "41", productTitle: "Nike running", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "126$", img: '../assets/images/cards/ten.png' },
+    { num: 11, id: "jordan", color: "blue", size: "41", productTitle: "Air jordan long", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "136$", img: '../assets/images/cards/14.png' },
+    { num: 12, id: "jordan", color: "black", size: "43", productTitle: "Black Air jordan", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "117$", img: '../assets/images/cards/12.png' },
+    { num: 13, id: "airforce", color: "gray", size: "39", productTitle: "Air force new", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "98$", img: '../assets/images/cards/13.png' },
+    { num: 14, id: "other", color: "black", size: "43", productTitle: "undefined shoes", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "155$", img: '../assets/images/cards/15.png' },
+    { num: 15, id: "running", color: "black", size: "42", productTitle: "Running nike", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "48$", img: '../assets/images/cards/16.png' },
+    { num: 16, id: "other", color: "green", size: "38", productTitle: "Grass nike", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "65$", img: '../assets/images/cards/29.png' },
+    { num: 17, id: "other", color: "white", size: "44", productTitle: "nike girl", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "78$", img: '../assets/images/cards/18.png' },
+    { num: 18, id: "running", color: "other", size: "42", productTitle: "Nike namad", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "98$", img: '../assets/images/cards/23.png' },
+    { num: 19, id: "other", color: "black", size: "43", productTitle: "Nike running", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "85$", img: '../assets/images/cards/20.png' },
+    { num: 20, id: "jordan", color: "white", size: "42", productTitle: "Volleyball nike", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "58$", img: '../assets/images/cards/21.png' },
+    { num: 21, id: "running", color: "black", size: "44", productTitle: "Nike running", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "84$", img: '../assets/images/cards/22.png' },
+    { num: 22, id: "airforce", color: "black", size: "41", productTitle: "Dark airforce", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "69$", img: '../assets/images/cards/24.png' },
+    { num: 23, id: "airforce", color: "red", size: "41", productTitle: "red Airforce", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "75$", img: '../assets/images/cards/27.png' },
+    { num: 24, id: "other", color: "blue", size: "43", productTitle: "Nike soccer", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "75$", img: '../assets/images/cards/28.png' },
 ];
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 (function render() {
     const row = document.getElementById('row');
@@ -171,6 +158,7 @@ const product = [
         paginatedProducts.map(item => {
             const col = document.createElement('div');
             col.classList.add('col-lg-4');
+            col.classList.add('card-info');
             col.innerHTML = `
                 <div class="card mb-2">
                     <img src="${item.img}" class="card-img-top" data-id=${item.num} alt="...">
@@ -178,17 +166,74 @@ const product = [
                         <h5 class="card-title">${item.productTitle} ${item.size}</h5>
                         <p class="card-text">${item.price}</p>
                         <div style="background-color: #81BFD3;" data-id=${item.num} class="btn shop add">buy now</div>
-                        <div style="background-color: #81BFD3;" data-id=${item.num} class="btn  basket"><i class="fa fa-cart-plus"></i>
-</div>
+                        <div style="background-color: #81BFD3;" data-id=${item.num} class="btn basket"><i class="fa fa-cart-plus"></i>
+                    </div>
 
                     </div>
                 </div>
             `
             row.appendChild(col);
+            
         });
 
-        attachClickEvents();
+        attachClickEvents()
+        
+        
     };
+
+
+
+
+      // basket 
+ 
+
+
+
+      document.addEventListener('click', (e) => {
+        if (e.target.closest('.basket')) { 
+            addToCart(e);
+        }
+    });
+    
+    function addToCart(e) {
+        e.preventDefault();
+        console.log("Click event triggered");
+    
+        const target = e.target.closest('.basket'); 
+    
+        if (target) {
+            console.log("Basket button clicked");
+    
+            const cardInfo = target.closest('.card-info');
+    
+            if (cardInfo) {
+                console.log("Card info found");
+                getCartInfo(cardInfo);
+            } else {
+                console.log("Card info not found");
+            }
+        } else {
+            console.log("Clicked element is not basket button");
+        }
+    }
+    
+    function getCartInfo(cardInfo) {
+        const productInfo = {
+            image: cardInfo.querySelector('.card-img-top').src,
+            title: cardInfo.querySelector('.card-title').textContent,
+            price: cardInfo.querySelector('.card-text').textContent,
+            id: cardInfo.querySelector('.basket').getAttribute('data-id')
+        };
+    
+        console.log("Product Info:", productInfo);
+        localStorage.setItem("productInfo" , JSON.stringify(productInfo));
+    }
+    
+  
+    // single page 
+
+
+
 
     const attachClickEvents = () => {
         const goDetailButtons = document.querySelectorAll(".shop");
@@ -205,11 +250,22 @@ const product = [
         navigation.navigate('../html-pages/product-detail.html');
     };
 
+
+
+
+
+
+
     searchInput.addEventListener('input', (e) => {
         filters.search = e.target.value;
         pagination.currentPage = 1;
         renderProducts();
     });
+
+
+
+
+  
 
     document.getElementById('all').addEventListener('click', () => {
         filters.id = [];
@@ -269,7 +325,6 @@ const product = [
         filter.classList.add('d-none')
     });
 
-    // Call renderProducts() when the page first loads to show products immediately
     renderProducts();
 })();
 
@@ -281,11 +336,11 @@ const showUserName = () => {
     const showName = document.getElementById('showName');
     const textId = document.getElementById('textId')
     if (userName) {
-  
+
         textId.innerText = `you wannna log out?`;
         showName.innerText = `hi ${userName}`;
         userBtn.innerText = `log out`;
-        
+
         userBtn.addEventListener('click', (e) => {
             e.preventDefault;
 
@@ -304,3 +359,8 @@ const showUserName = () => {
 
 })()
 
+
+
+
+
+  
