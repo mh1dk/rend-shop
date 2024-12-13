@@ -163,9 +163,14 @@ const product = [
                 <div class="card mb-2">
                     <img src="${item.img}" class="card-img-top" data-id=${item.num} alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">${item.productTitle} ${item.size}</h5>
+                        <h5 class="card-title">${item.productTitle}</h5>
+                        <div class="d-flex">
+                        <h5 class="me-1">available size:</h5>
+                        <h5 class="card-title-size"> ${item.size}</h5>
+                         </div>
+
                         <p class="card-text">${item.price}</p>
-                        <div style="background-color: #81BFD3;" data-id=${item.num} class="btn shop add">buy now</div>
+                        <div style="background-color: #81BFD3;" data-id=${item.num} class="btn shop add">see detail</div>
                         <div style="background-color: #81BFD3;" data-id=${item.num} class="btn basket"><i class="fa fa-cart-plus"></i>
                     </div>
 
@@ -186,11 +191,11 @@ const product = [
 
       // basket 
  
+    const alertAdd = document.getElementById("basket-alert");
 
 
-
-      document.addEventListener('click', (e) => {
-        if (e.target.closest('.basket')) { 
+    document.addEventListener('click', (e) => {
+        if (e.target.closest('.basket')) {
             addToCart(e);
         }
     });
@@ -203,6 +208,10 @@ const product = [
     
         if (target) {
             console.log("Basket button clicked");
+            alertAdd.classList.remove("d-none");
+            setTimeout(() => {
+                alertAdd.classList.add("d-none");
+            }, 1500);
     
             const cardInfo = target.closest('.card-info');
     
@@ -221,14 +230,33 @@ const product = [
         const productInfo = {
             image: cardInfo.querySelector('.card-img-top').src,
             title: cardInfo.querySelector('.card-title').textContent,
+            size: cardInfo.querySelector('.card-title-size').textContent,
             price: cardInfo.querySelector('.card-text').textContent,
-            id: cardInfo.querySelector('.basket').getAttribute('data-id')
+            id: cardInfo.querySelector('.basket').getAttribute('data-id'),
+            count: 1 
         };
     
         console.log("Product Info:", productInfo);
-        localStorage.setItem("productInfo" , JSON.stringify(productInfo));
+    
+        
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    
+        const existingProduct = cart.find(product => product.id === productInfo.id);
+    
+        if (existingProduct) {
+            existingProduct.count++;
+        } else {
+           
+            cart.push(productInfo);
+        }
+    
+        localStorage.setItem("cart", JSON.stringify(cart));
     }
     
+
+
+
+
   
     // single page 
 

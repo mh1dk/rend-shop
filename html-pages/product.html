@@ -20,149 +20,7 @@
 </head>
 
 <body>
-    <!-- filter part for sm devices -->
-    <!-- <div class="box-filter-res">
-
-    <div class="position-relative bg-primary d-none" id="filter">
-        <div class="w-50 bg-white w-100 p-4 z-3  position-absolute ">
-
-
-            <div style="right: 65em; height: 100%; position: sticky;top: 45px;" class="">
-                <div class="left-side ">
-
-                    <div class="d-flex row align-items-center">
-                    <h3 class="pt-2 col-6" >
-                        Filter
-                    </h3>
-                    <h3 class="d-flex col-6 justify-content-end" id="close">
-                        ✕
-                    </h3>
-                    </div>
-                    <div class="selected-filters mt-4">
-                        <h5>Selected Filters:</h5>
-                        <div style="color: #81BFD3;" id="selected-filters-list" class="d-flex flex-wrap gap-2">
-                        </div>
-                    </div>
-                    
-                    <div class="mt-4">
-                        <p style="cursor: pointer;font-size: larger;" id="all">
-                            All products
-                        </p>
-                        <p style="cursor: pointer;font-size: larger;" id="airforce">
-                            Airforce shoes
-                        </p>
-                        <p style="cursor: pointer;font-size: larger;" id="jordan">
-                            Jordan shoes
-                        </p>
-                        <p style="cursor: pointer;font-size: larger;" id="running">
-                            running shoes
-                        </p>
-                        <p style="cursor: pointer;font-size: larger;" id="others">
-                            other shoes
-                        </p>
-                    </div>
-
-
-                    <div style="margin-left: -1.3em;" class="accordion bg-white" id="accordionExample">
-                        <div style="border: none;" class="accordion-item bg-white">
-                            <h2 class="accordion-header bg-white">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Colours
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse "data-bs-parent="#accordionExample">
-                                <div class="accordion-body ">
-
-                                    <div class="row d-flex justify-content-center align-items-center">
-                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="black">Black
-                                        </div>
-                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="white">White
-                                        </div>
-                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="brown">Brown
-                                        </div>
-                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="green">Green
-                                        </div>
-                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="blue">Blue
-                                        </div>
-                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="red">red
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="border: none;" class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Available Size
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div class="row d-flex justify-content-center align-items-center">
-                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="38">38
-                                        </div>
-                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="39">39
-                                        </div>
-                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="40">40
-                                        </div>
-                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="41">41
-                                        </div>
-                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="42">42
-                                        </div>
-                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="43">43
-                                        </div>
-                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="44">44
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div style="border: none;" class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Shop by price
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div class="row d-flex justify-content-center align-items-center">
-                                        <div style="cursor: pointer;" class="col-lg-3 border text-center m-1 size" id="50">
-                                            < 50 </div>
-                                                <div style="cursor: pointer;"
-                                                    class="col-lg-3 border text-center m-1 size" id="60">
-                                                    < 60</div>
-                                                        <div style="cursor: pointer;"
-                                                            class="col-lg-3 border text-center m-1 size" id="70">
-                                                            < 70</div>
-                                                                <div style="cursor: pointer;"
-                                                                    class="col-lg-3 border text-center m-1 size" id="80">
-                                                                    < 80</div>
-                                                                        <div style="cursor: pointer;"
-                                                                            class="col-lg-3 border text-center m-1 size" id="90">
-                                                                            < 90</div>
-                                                                                <div style="cursor: pointer;"
-                                                                                    class="col-lg-3 border text-center m-1 size" id="100">
-                                                                                    < 100</div>
-                                                                                        <div style="cursor: pointer;"
-                                                                                            class="col-lg-3 border text-center m-1 size" id="101">
-                                                                                            > 101</div>
-                                                                                </div>
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                    </div>
-        </div>
-    </div>
-</div> -->
-
+    
 
 
 
@@ -187,7 +45,7 @@
 
                     <div class="col-lg-3  d-flex justify-content-center align-items-center ">
                         <ul class="d-flex justify-content-center w-100 mt-3">
-                            <li class="ps-5"><a href="index.html"> home </a></li>
+                            <li class="ps-5"><a href="../index.html"> home </a></li>
                             <li class="ps-5"><a href="../html-pages/about.html"> about </a></li>
                             <li class="ps-5"><a href="../html-pages/product.html"> shop </a></li>
                             <li class="ps-5">
@@ -286,68 +144,19 @@
             </div>
         </div>
     </div>
-    <!-- navbar bottom for sm  -->
-    <div class="nav-res-sm">
-        <div style="width: 103vw;" class="row">
-            <div class="col-12 d-flex justify-content-center">
-                <div class="row d-flex justify-content-center w-100 flex-row-reverse">
-                    <div class="col-3 d-flex flex-column text-center justify-content-center p-2">
-                        <div class="center-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi bi-house-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z" />
-                                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z" />
-                            </svg>
-                        </div>
-                        <a href="index.html">
-                            home
-                        </a>
-                    </div>
-                    <div class="col-3 d-flex flex-column text-center justify-content-center p-2">
-                        <div class="center-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi bi-book" viewBox="0 0 16 16">
-                                <path
-                                    d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
-                            </svg>
-
-                        </div>
-                        <a href="about.html">
-                            about
-                        </a>
-                    </div>
-                    <div class="col-3 d-flex flex-column text-center justify-content-center p-2">
-                        <div class="center-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi bi-cart4" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                            </svg>
-                        </div>
-                        <a href="product.html">
-                            shop
-                        </a>
-                    </div>
-                    <div class="col-3 d-flex flex-column text-center justify-content-center p-2">
-                        <div class="center-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi bi-person-fill" viewBox="0 0 16 16">
-                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                            </svg>
-                        </div>
-                        <a href="">
-                            account
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+ 
 
     <div class="container fluid">
 
+
+
+        <!-- alert for add product  -->
+        <div class="position-fixed w-100 d-flex justify-content-center d-none" style="top: 90%; z-index: 1050;" id="basket-alert">
+            <div class="alert alert-success w-50 d-flex justify-content-center w-md-50" role="alert">
+                the item added successfuly!
+            </div>
+        </div>
+        
 
 <!-- search  -->
 
