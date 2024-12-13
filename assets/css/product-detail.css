@@ -47,5 +47,10 @@ body {
     margin-top: 10px;
   }
 }
+.card-product {
+  width: 50%;
+  height: 58%;
+  background-color: #81bfd3;
+}
 
 /*# sourceMappingURL=product-detail.css.map */

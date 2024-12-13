@@ -24,7 +24,6 @@ const product = [
     { num: 23, id: "airforce", color: "red", size: "41", productTitle: "red Airforce", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "75$", img: '../assets/images/cards/27.png' },
     { num: 24, id: "other", color: "blue", size: "43", productTitle: "Nike soccer", desc: "Nike Sneakers combine sleek style with all-day comfort, offering durability .", price: "75$", img: '../assets/images/cards/28.png' },
 ];
-
 (function render() {
     const row = document.getElementById('row');
     const selectedFiltersList = document.getElementById('selected-filters-list');
